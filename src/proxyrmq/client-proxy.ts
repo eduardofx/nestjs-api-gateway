@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 
 @Injectable()
-export class ClientProxySmartRanking {
+export class ClientProxy {
 
   constructor(
     private configService: ConfigService
