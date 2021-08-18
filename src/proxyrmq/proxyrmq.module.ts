@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ClientProxySmartRanking } from './client-proxy'
+import { ClientProxy } from './client-proxy'
 
 @Module({
     providers: [ClientProxy],
