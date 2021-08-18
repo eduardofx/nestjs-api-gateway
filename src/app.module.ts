@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'; 
-import { ClientProxySmartRanking } from './proxyrmq/client-proxy'
+import { ClientProxy } from './proxyrmq/client-proxy'
 import { ProxyRMQModule } from './proxyrmq/proxyrmq.module';
 import { AwsModule } from './aws/aws.module';
 import { ConfigModule } from '@nestjs/config'  
@@ -13,6 +13,6 @@ import { AuthModule } from './auth/auth.module';
     AuthModule
   ],
   controllers: [],
-  providers: [ClientProxySmartRanking],
+  providers: [ClientProxy],
 })
 export class AppModule {}
